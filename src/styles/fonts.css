@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../../public/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../../public/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Archivo Black";
+    src: url("../../public/fonts/Archivo-Black.ttf");
+}

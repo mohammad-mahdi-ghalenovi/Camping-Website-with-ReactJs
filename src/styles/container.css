@@ -1,0 +1,43 @@
+/* 
+
+container
+
+ */
+
+ .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 54rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 72rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 114rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 137rem;
+    }
+}

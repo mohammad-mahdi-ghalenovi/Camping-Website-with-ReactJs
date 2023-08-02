@@ -1,0 +1,268 @@
+:root {
+    --orange: #E76F51;
+    --white: #fff;
+    --dark: #1d1c1c;
+}
+
+html {
+    box-sizing: border-box;
+    /* font-size: 10px; */
+    /* to make the "rem" to 10px */
+    font-size: 62.5%;
+    /* => 10px => it depended on the browser font settings */
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+/* 
+
+    ----------------
+     header-content
+    ----------------
+
+*/
+
+.btn {
+    display: block;
+    width: 15rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: var(--dark);
+    border-radius: 2rem;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Roboto";
+    line-height: 1.6;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    /* => font-size * line-height  */
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url(../imgs/images/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.nav-logo__img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    display: none;
+    margin-left: 4rem;
+}
+
+.menu__item {
+    margin-right: 2rem;
+}
+
+.menu__link {
+    color: #d2d2d2;
+    transition: 200ms color ease;
+    user-select: none;
+}
+
+.menu__link:hover {
+    color: var(--white);
+}
+
+.menu__link--active {
+    position: relative;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.menu__link--active::after {
+    position: absolute;
+    content: " ";
+    width: 4rem;
+    height: 3px;
+    background-color: var(--orange);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.nav-menu {
+    position: fixed;
+    background: violet;
+    top: 0;
+    left: -23rem;
+    bottom: 0;
+    width: 23rem;
+    padding: 2rem;
+    transition: 0.35s ease-in-out;
+}
+
+.nav-menu--open {
+    left: 0;
+}
+
+.mobile-menu {}
+
+.mobile-menu__item {
+    margin: 0.4rem 0;
+}
+
+.mobile-menu__link {
+    color: var(--white);
+}
+
+.nav-menu__links {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.nav-menu__link {
+    color: var(--white);
+    border: 1px solid var(--white);
+    display: block;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.nav__links {
+    display: none;
+    align-items: center;
+}
+
+.nav__link {
+    color: var(--white);
+    font-family: "Roboto Medium";
+    margin-left: 1rem;
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+    transition: 200ms ease all;
+}
+
+.nav__link--active {
+    border: 1px solid var(--white);
+}
+
+.nav__link--active:hover {
+    border: 1px solid var(--orange);
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-btn__line {
+    position: relative;
+    display: block;
+    width: 2.5rem;
+    height: 0.2rem;
+    border-radius: 1rem;
+    background: var(--orange);
+    transition: 0.25s all ease-in-out;
+}
+
+.nav-btn__line::after,
+.nav-btn__line::before {
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 0.2rem;
+    border-radius: 1rem;
+    background: var(--orange);
+    transition: 0.2s all ease-in-out;
+}
+
+.nav-btn__line::after {
+    top: 0.6rem;
+}
+
+.nav-btn__line::before {
+    top: -0.6rem;
+}
+
+.nav-btn--open .nav-btn__line {
+    background: transparent;
+}
+
+.nav-btn--open .nav-btn__line::before {
+    transform: translateY(0.6rem) rotate(45deg);
+}
+
+.nav-btn--open .nav-btn__line::after {
+    transform: translateY(-0.6rem) rotate(-45deg);
+}
+
+/* 
+
+    ----------------
+     header-content
+    ----------------
+
+*/
+
+.header-content {
+    color: var(--white);
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+}
+
+.header-content__title {
+    font-family: "Archivo black";
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.header-content__caption {
+    max-width: 40rem;
+    margin: -1rem auto 0 auto;
+}
+
+.header-content__link {
+    background: var(--orange);
+    color: var(--white);
+    margin-top: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
