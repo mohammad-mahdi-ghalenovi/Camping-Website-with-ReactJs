@@ -3,7 +3,5 @@
     justify-content: space-around;
     flex-wrap: wrap;
     position: relative;
-    top: -5rem;
-    gap: 1rem
-    ;
+    top: -15rem;
 }

@@ -245,7 +245,10 @@ header {
 .header-content {
     color: var(--white);
     text-align: center;
-    margin: 4rem 0 2rem 0;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 10%);
 }
 
 .header-content__title {

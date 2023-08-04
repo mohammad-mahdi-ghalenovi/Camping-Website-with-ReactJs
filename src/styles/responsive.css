@@ -1,3 +1,8 @@
+@media (min-width: 400px) {
+    .header-content {
+        transform: translate(-50%, 50%);
+    }
+}
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
