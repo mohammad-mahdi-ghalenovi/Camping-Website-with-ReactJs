@@ -37,6 +37,7 @@ html {
     background: var(--dark);
     border-radius: 2rem;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 body {
