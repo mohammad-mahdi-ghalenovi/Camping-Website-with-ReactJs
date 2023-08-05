@@ -1,13 +1,11 @@
-import "../styles/reset.css"
-import "../styles/fonts.css" 
-import "./MainContent.css"
-import "../styles/container.css"
 import Service from "../Service/Service"
 import Destination from "../Destination/Destination"
 import "../styles/reset.css"
 import "../styles/fonts.css" 
 import "../styles/container.css"
+import "./MainContent.css"
 import "../styles/responsive.css"
+
 
 function Main () {
     return (
@@ -20,6 +18,13 @@ function Main () {
                 <Service name="Recreation Activities" img="../../public/imgs/svgs/fish.svg" caption="Find the best spots for hunting, fishing & recreational shooting."/>
             </section>
             <section className="destinations">
+                <div className="destination-title-container">
+                        <img src="../../public/imgs/svgs/destination.svg"  className="destination-title-container__icon" alt="" />
+                        <h2 className="destination-title-container__title">
+                            Explore Destinations
+                            & Activities
+                        </h2>
+                </div>
                 <Destination name="Trickle Creek Ranch" img="public/imgs/images/image1.jpg" />
                 <Destination name="Dragonfly Tiny Cabin" img="public/imgs/images/image2.jpg" />
                 <Destination name="Tiny Cabin in the mountains" img="public/imgs/images/image3.jpg" />

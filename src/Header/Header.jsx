@@ -2,7 +2,6 @@ import "../styles/reset.css"
 import "../styles/fonts.css" 
 import "../styles/container.css"
 import "./header.css"
-import "../styles/responsive.css"
 
 
 function Header () {
