@@ -7,7 +7,7 @@ import "./MainContent.css"
 
 
 function Main () {
-    const allDestination = [
+    const allDestinations = [
         {id: 1, name : "Trickle Creek Ranch" , img : "public/imgs/images/image1.jpg"},
         {id: 2, name : "Dragonfly Tiny Cabin" , img : "public/imgs/images/image2.jpg"},
         {id: 3, name : "Tiny Cabin in the mountains" , img : "public/imgs/images/image3.jpg"},
@@ -21,14 +21,20 @@ function Main () {
         {id: 11, name : "Red Lifeguard Stand" , img : "public/imgs/images/image11.jpg"},
         {id: 12, name : "Ninovan on the Shore" , img : "public/imgs/images/image12.jpg"},
     ]
+    const AllServices = [
+        {id: 1, name : "Camping & Day Use" , img : "../../public/imgs/svgs/fire.svg" , caption: "Return to your favorite spot or discover a new one that’s right for you."},
+        {id: 2, name : "Tours & Tickets" , img : "../../public/imgs/svgs/tickets.svg" ,  caption: "Reserve tours and tickets to participate in events."},
+        {id: 3, name : "Permits" , img : "../../public/imgs/svgs/paper.svg" , caption: "Obtain permits for access to high-demand locations."},
+        {id: 4, name : "Recreation Activities" , img : "../../public/imgs/svgs/fish.svg" , caption: "Find the best spots for hunting, fishing & recreational shooting."},
+    ]
     return (
         <main>
         <div className="container">
             <section className="services">
-                <Service name="Camping & Day Use" img="../../public/imgs/svgs/fire.svg" caption="Return to your favorite spot or discover a new one that’s right for you."/>
-                <Service name="Tours & Tickets" img="../../public/imgs/svgs/tickets.svg" caption="Reserve tours and tickets to participate in events."/>
-                <Service name="Permits" img="../../public/imgs/svgs/paper.svg" caption="Obtain permits for access to high-demand locations."/>
-                <Service name="Recreation Activities" img="../../public/imgs/svgs/fish.svg" caption="Find the best spots for hunting, fishing & recreational shooting."/>
+                <Service {...AllServices[0]} />
+                <Service {...AllServices[1]} />
+                <Service {...AllServices[2]} />
+                <Service {...AllServices[3]} />
             </section>
             <section className="destinations">
                 <div className="destination-title-container">
@@ -38,18 +44,18 @@ function Main () {
                             & Activities
                         </h2>
                 </div>
-                <Destination {...allDestination[0]} />
-                <Destination {...allDestination[1]} />
-                <Destination {...allDestination[2]} />
-                <Destination {...allDestination[3]} />
-                <Destination {...allDestination[4]}/>
-                <Destination {...allDestination[5]} />
-                <Destination {...allDestination[6]} />
-                <Destination {...allDestination[7]} />
-                <Destination {...allDestination[8]} />
-                <Destination {...allDestination[9]}/>
-                <Destination {...allDestination[10]} />
-                <Destination {...allDestination[11]} />
+                <Destination {...allDestinations[0]} />
+                <Destination {...allDestinations[1]} />
+                <Destination {...allDestinations[2]} />
+                <Destination {...allDestinations[3]} />
+                <Destination {...allDestinations[4]}/>
+                <Destination {...allDestinations[5]} />
+                <Destination {...allDestinations[6]} />
+                <Destination {...allDestinations[7]} />
+                <Destination {...allDestinations[8]} />
+                <Destination {...allDestinations[9]}/>
+                <Destination {...allDestinations[10]} />
+                <Destination {...allDestinations[11]} />
                 <a href="#" className="destinations__link btn">View all</a>
             </section>
         </div>
