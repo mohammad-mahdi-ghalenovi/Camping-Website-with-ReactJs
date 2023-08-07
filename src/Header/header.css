@@ -132,6 +132,7 @@ header {
     width: 23rem;
     padding: 2rem;
     transition: 0.35s ease-in-out;
+    z-index: 999;
 }
 
 .nav-menu--open {

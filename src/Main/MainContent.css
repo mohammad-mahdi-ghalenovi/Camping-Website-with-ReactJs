@@ -37,6 +37,15 @@
     max-width: 47rem;
 }
 
+.destinations__link {
+    margin-top: 7rem;
+    width:19rem;
+    height: 4.2rem;
+    background: transparent;
+    color: #E76F51;
+    border: 1px solid #E76F51;
+}
+
 
 /* Media query */
 @media (min-width: 400px) {

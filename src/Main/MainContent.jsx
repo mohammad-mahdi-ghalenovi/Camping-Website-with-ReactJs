@@ -4,7 +4,6 @@ import "../styles/reset.css"
 import "../styles/fonts.css" 
 import "../styles/container.css"
 import "./MainContent.css"
-import "../styles/responsive.css"
 
 
 function Main () {
@@ -37,6 +36,7 @@ function Main () {
                 <Destination name="The Tree House" img="public/imgs/images/image10.jpg" />
                 <Destination name="Barrier island elevated tent" img="public/imgs/images/image11.jpg" />
                 <Destination name="Ninovan on the Shore" img="public/imgs/images/image12.jpg" />
+                <a href="#" className="destinations__link btn">View all</a>
             </section>
         </div>
         </main>
