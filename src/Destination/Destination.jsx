@@ -3,7 +3,7 @@ import "../styles/fonts.css"
 import "../styles/container.css"
 import "./Destination.css"
 
-function Destination ({img , name}) {
+function Destination ({img ="public/imgs/images/cameraoff.jpg" , name}) {
     return (
         <div className="destination-card">
 
