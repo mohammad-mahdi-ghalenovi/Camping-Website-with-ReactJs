@@ -32,6 +32,8 @@
 }
 
 .destinations__link {
+    position: absolute;
+    bottom: -7rem;
     margin-top: 7rem;
     width:19rem;
     height: 4.2rem;

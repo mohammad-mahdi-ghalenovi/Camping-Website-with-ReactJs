@@ -2,13 +2,15 @@
 .banner {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 3rem 5rem;
     max-width: 151.8rem;
-    height: 39rem;
+    height: auto;
     background-color: #F8E1DB;
     border-radius: 1rem;
+    margin-top: 10rem;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
@@ -47,6 +49,7 @@
     border-radius: 1rem;
     border: none;
     padding: 0 6rem;
+    font-size: 16px;
 }
 
 .banner-left-content__input-container input:focus {
@@ -86,7 +89,13 @@
 
 .banner__blub {
     position: absolute;
+    height: 100%;
+    width: 100%;
     left: 0;
     overflow: hidden;
     z-index: 1;
+}
+
+.banner__blub img {
+    height: 100%;
 }

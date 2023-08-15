@@ -28,6 +28,11 @@ container
     .container {
         width: 96rem;
     }
+
+    .banner {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }
 
 @media (min-width: 1200px) {
