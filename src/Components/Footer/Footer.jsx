@@ -4,14 +4,14 @@ function Footer() {
   return (
     <div>
             <footer className="footer">
-                  <div className="container">
+                  <div className="container footer-container">
                         <div className="footer__left-content">
                                   <h2 className="left-content__title">Hipcamp is everywhere you want to camp.</h2>
-                                  <p className="left-content__title">Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.</p>
+                                  <p className="left-content__caption">Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.</p>
                                   <div className="left-content__apps">
                                         <h2 className="apps__title">Download our App</h2>
-                                        <img src="./public/imgs/images/app-store-apple.jpg" alt="apple store" className="apps__item" />
-                                        <img src="./public/imgs/images/google-play.jpg" alt="google play" className="apps__item" />
+                                        <img src="./public/imgs/images/app-store-apple.jpg" alt="apple store" />
+                                        <img src="./public/imgs/images/google-play.jpg" alt="google play"/>                                            
                                   </div>
                         </div>
                         <div className="footer__right-content">
