@@ -1,9 +1,6 @@
-import "../styles/reset.css"
-import "../styles/fonts.css" 
-import "../styles/container.css"
-import "./Destination.css"
+import "./DestinationBox.css"
 
-function Destination ({img ="public/imgs/images/cameraoff.jpg" , name}) {
+function DestinationBox ({img ="public/imgs/images/cameraoff.jpg" , name}) {
     return (
         <div className="destination-card">
 
@@ -21,4 +18,4 @@ function Destination ({img ="public/imgs/images/cameraoff.jpg" , name}) {
     )
 }
 
-export default Destination;
+export default DestinationBox;

@@ -1,0 +1,92 @@
+/* Banner */
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    max-width: 151.8rem;
+    height: 39rem;
+    background-color: #F8E1DB;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.banner-left-content {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 61.6rem;
+    z-index: 9;
+}
+
+.banner-left-content__title {
+    font-family: "Archivo Black";
+    font-size: 4rem;
+    color: #3B3735;
+}
+
+.banner-left-content__caption {
+    font-family: "Roboto Medium";
+    font-size: 1.6rem;
+    color: #3B3735;
+}
+
+.banner-left-content__input-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.banner-left-content__input-container input {
+    width: 100%;
+    height: 8rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0 6rem;
+}
+
+.banner-left-content__input-container input:focus {
+    outline: none;
+}
+
+.banner-left-content__icon {
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.send-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0rem;
+    top: 50%;
+    background-color: #E76F51;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2rem;
+    box-shadow: #E76F51 0px 10px 36px 0px, #E76F51 0px 0px 0px 1px;
+    cursor: pointer;
+}
+
+.email-icon {
+    left: 3rem;
+}
+
+.banner-right-content {
+    z-index: 9;
+}
+
+.banner-right-content__img {}
+
+
+.banner__blub {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}

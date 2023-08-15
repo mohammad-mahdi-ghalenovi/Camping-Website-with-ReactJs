@@ -1,6 +1,6 @@
-import "./Service.css"
+import "./ServiceBox.css"
 
-function Service ({ name : title , img  = "public/imgs/images/cameraoff.jpg" , caption}) {
+function ServiceBox ({ name : title , img  = "public/imgs/images/cameraoff.jpg" , caption}) {
     return (
 
         <div className="services__item">
@@ -14,4 +14,4 @@ function Service ({ name : title , img  = "public/imgs/images/cameraoff.jpg" , c
 
  
 
-export default Service;
+export default ServiceBox;
