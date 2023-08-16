@@ -10,8 +10,10 @@ function Footer() {
                                   <p className="left-content__caption">Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.</p>
                                   <div className="left-content__apps">
                                         <h2 className="apps__title">Download our App</h2>
-                                        <img src="./public/imgs/images/app-store-apple.jpg" alt="apple store" />
-                                        <img src="./public/imgs/images/google-play.jpg" alt="google play"/>                                            
+                                        <div className="apps__img-container">
+                                          <img src="./public/imgs/images/app-store-apple.jpg" alt="apple store" />
+                                          <img src="./public/imgs/images/google-play.jpg" alt="google play"/>                                            
+                                        </div>
                                   </div>
                         </div>
                         <div className="footer__right-content">
@@ -39,6 +41,10 @@ function Footer() {
                                   <a href=""><li>Submit Feedback</li></a>
                               </ul>
                         </div>
+                              <p className="copy ">&copy; all rights reserved by Metti</p>
+                              <a href="#" className="go-top">
+                                    <img src="./public/imgs/svg-icons/arrow-top.svg" alt="" />
+                              </a>
                   </div>
             </footer>
     </div>

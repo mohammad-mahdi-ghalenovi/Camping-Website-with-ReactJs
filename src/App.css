@@ -1,3 +1,7 @@
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #FAF4F2;
 }
@@ -24,6 +28,7 @@ body {
     .nav-menu {
         display: none;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -78,6 +83,16 @@ body {
         text-wrap: nowrap
     }
 
+    .left-content__apps {
+        margin-top: 3.5rem;
+        position: relative;
+        bottom: auto;
+    }
+
+    .go-top {
+        right: 10rem;
+        left: auto;
+    }
 }
 
 @media (min-width: 1400px) {}
