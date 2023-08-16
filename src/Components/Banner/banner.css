@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 5rem;
+    padding: 3rem 2rem;
     max-width: 151.8rem;
     height: auto;
     background-color: #F8E1DB;
@@ -14,12 +14,14 @@
     overflow: hidden;
 }
 
+/* left-content */
 .banner-left-content {
     position: relative;
     display: flex;
     justify-content: start;
     flex-direction: column;
     width: 61.6rem;
+    order: 1;
     z-index: 9;
 }
 
@@ -80,11 +82,18 @@
     left: 3rem;
 }
 
+/* left-content */
+/* right-content */
+
 .banner-right-content {
     z-index: 9;
 }
 
-.banner-right-content__img {}
+.banner-right-content__img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
 
 
 .banner__blub {
@@ -99,3 +108,4 @@
 .banner__blub img {
     height: 100%;
 }
+/* right-content */

@@ -41,7 +41,12 @@ body {
 
     .banner {
         flex-wrap: nowrap;
+        padding: 3rem 5rem;
         justify-content: space-between;
+    }
+
+    .banner-left-content {
+        order: -1;
     }
 }
 
@@ -67,6 +72,10 @@ body {
 
     .footer-container {
         justify-content: start;
+    }
+
+    .footer-titles {
+        text-wrap: nowrap
     }
 
 }

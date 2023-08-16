@@ -22,6 +22,7 @@ footer.footer {
     font-size: 1.8rem;
     color: #3B3735;
     margin-bottom: 2rem;
+    text-wrap: wrap;
 }
 
 /* left content */
