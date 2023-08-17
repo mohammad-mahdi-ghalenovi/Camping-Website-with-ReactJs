@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     margin-bottom: 2rem;
     margin-top: 27rem;
+    z-index: 2;
 }
 
 .destination-title-container {
@@ -35,9 +36,32 @@
     position: absolute;
     bottom: -7rem;
     margin-top: 7rem;
-    width:19rem;
+    width: 19rem;
     height: 4.2rem;
     background: transparent;
     color: #E76F51;
     border: 1px solid #E76F51;
+}
+
+/* Blubs */
+.blub {
+    position: absolute;
+    z-index: 1;
+    max-width: 100rem;
+}
+
+.blub img {
+    position: relative;
+    width: 100%; 
+}
+
+.right-blub {
+    top: 83rem;
+    right: -40rem;
+    display: none;
+}
+
+.left-blub {
+    top: 165rem;
+    left: -30rem;
 }

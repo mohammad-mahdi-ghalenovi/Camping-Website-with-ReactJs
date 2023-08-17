@@ -82,6 +82,8 @@ function Destinations() {
           View all
         </a>
       </section>
+      <div className="left-blub blub"><img src="./public/imgs/svgs/shape2.svg" alt="" /></div>
+      <div className="right-blub blub"><img src="./public/imgs/svgs/shape1.svg" alt="" /></div>
     </div>
   );
 }

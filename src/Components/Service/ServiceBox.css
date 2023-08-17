@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     position: relative;
     top: -15rem;
+    z-index: 2;
 }
 
 .services__item {

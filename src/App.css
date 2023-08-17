@@ -3,6 +3,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background: #FAF4F2;
 }
 
@@ -93,6 +94,11 @@ body {
         right: 10rem;
         left: auto;
     }
+
+    .right-blub {   
+        display: block;
+    }
+    
 }
 
 @media (min-width: 1400px) {}
