@@ -3,6 +3,7 @@ import "../Header/header.css"
 function Nav () {
     return (
         <nav className="nav" onLoad={setLinkClass}>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <div className="nav__wrapper">
                 <a href="#" className="nav-logo">
                 <img src="imgs/svgs/logo.svg" alt="camping website" className="nav-logo__img" />
@@ -34,30 +35,30 @@ function Nav () {
             <div className="nav-menu">
             <ul className="mobile-menu">
                 <li className="mobile-menu__item">
-                    <a href="#" className="mobile-menu__link">Home</a>
+                    <a href="#" className="mobile-menu__link"> <i className="fa fa-home"></i> Home</a>
                 </li>
                 <li className="mobile-menu__item">
-                    <a href="#" className="mobile-menu__link">Destination</a>
+                    <a href="#" className="mobile-menu__link"><i className="fa fa-plane"></i> Destination</a>
                 </li>
                 <li className="mobile-menu__item">
-                    <a href="#" className="mobile-menu__link">Near Me</a>
+                    <a href="#" className="mobile-menu__link"><i className="fa fa-location"></i>Near Me</a>
                 </li>
                 <li className="mobile-menu__item">
-                    <a href="#" className="mobile-menu__link">Events</a>
+                    <a href="#" className="mobile-menu__link"><i className="fa fa-calendar"></i>Events</a>
                 </li>
                 <li className="mobile-menu__item">
-                    <a href="#" className="mobile-menu__link">Blog</a>
+                    <a href="#" className="mobile-menu__link"><i className="fa fa-th-large"></i>Blog</a>
                 </li>
                 <li className="mobile-menu__item">
-                    <a href="#" className="mobile-menu__link">Gallery</a>
+                    <a href="#" className="mobile-menu__link"><i className="fa fa-camera"></i>Gallery</a>
                 </li>
                 <li className="mobile-menu__item">
-                    <a href="#" className="mobile-menu__link">About</a>
+                    <a href="#" className="mobile-menu__link"><i className="fa fa-info"></i>About</a>
                 </li>
             </ul>
             <div className="nav-menu__links">
-                    <a href="#" className="nav-menu__link">Sign up</a>
-                    <a href="#" className="nav-menu__link">Sign in</a>
+                    <a href="#" className="nav-menu__link mobile-menu__item">Sign up</a>
+                    <a href="#" className="nav-menu__link mobile-menu__item">Sign in</a>
             </div>
             </div>
             <div className="nav__links">

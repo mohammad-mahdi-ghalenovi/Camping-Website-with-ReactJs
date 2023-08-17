@@ -123,16 +123,28 @@ header {
     z-index: -1;
 }
 
+/* 
+
+    ----------------
+        nav-menu
+    ----------------
+
+*/
+
 .nav-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    background: violet;
+    background-color: #fff;
     top: 0;
     left: -23rem;
     bottom: 0;
     width: 23rem;
-    padding: 2rem;
+    padding: 1rem;
     transition: 0.35s ease-in-out;
     z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .nav-menu--open {
@@ -142,25 +154,69 @@ header {
 .mobile-menu {}
 
 .mobile-menu__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
     margin: 0.4rem 0;
+    height: 5rem;
+    border-radius: 0.6rem;
+}
+
+.mobile-menu__item:hover {
+    background-color: var(--orange);
+}
+
+.mobile-menu__item:hover .mobile-menu__link {
+    color: var(--white);
 }
 
 .mobile-menu__link {
-    color: var(--white);
+    color: var(--orange);
+    font-size: 1.8rem;
+    padding: 1rem;
 }
+
+.mobile-menu__link i {
+    margin-right: 2rem;
+}
+
+
+/* 
+
+    --------------------
+      nav-menu__links
+    --------------------
+
+*/
 
 .nav-menu__links {
     display: flex;
-    margin-top: 2rem;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1rem;
+    width: 90%;
 }
 
 .nav-menu__link {
-    color: var(--white);
-    border: 1px solid var(--white);
-    display: block;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--orange);
+    border: 0.002px solid var(--orange);
     padding: 1rem;
-    flex-grow: 1;
 }
+
+.nav-menu__link:hover {
+    color: var(--white)
+}
+
+/* 
+
+    ----------------
+        nav-links
+    ----------------
+
+*/
 
 .nav__links {
     display: none;
@@ -184,6 +240,13 @@ header {
     border: 1px solid var(--orange);
 }
 
+/* 
+
+    ----------------
+          nav-btn
+    ----------------
+
+*/
 .nav-btn {
     display: flex;
     justify-content: center;
@@ -235,6 +298,8 @@ header {
 .nav-btn--open .nav-btn__line::after {
     transform: translateY(-0.6rem) rotate(-45deg);
 }
+
+/* nav-btn */
 
 /* 
 
