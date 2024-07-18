@@ -94,6 +94,7 @@ header {
     color: #d2d2d2;
     transition: 200ms color ease;
     user-select: none;
+    cursor: pointer;
 }
 
 .menu__link:hover {
